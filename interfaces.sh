@@ -1,4 +1,5 @@
 #!/bin/bash
+read varname
 echo "Interfaces: $(ifconfig) " >> InterfacesN.txt
-echo "Pings: $(ping 8.8.8.8 -c 10)"
+echo "Pings: $(ping $varname -c 10)"
 
